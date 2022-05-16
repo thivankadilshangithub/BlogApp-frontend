@@ -24,7 +24,7 @@ const Auth = () => {  //Login == Auth
   }
 
   const sendRequest = async(type="login")=>{
-     const res =  await axios.post(`http://localhost:5000/api/user/${type}` , {
+     const res =  await axios.post(`https://mern-blogapplication.herokuapp.com/api/user/${type}` , {
         name:inputs.name,
         email: inputs.email,
         password: inputs.password
